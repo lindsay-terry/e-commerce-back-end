@@ -21,7 +21,7 @@ router.get('/:id', async (req, res) => {
       include: [{ model: Product }]
     });
     if (!categoryData) {
-      return res.status(404).json({ message: 'Category not found, please try again.'});
+      return res.status(404).json({ message: 'Category not found, please try again.' });
     }
     res.status(200).json(categoryData);
   } catch (error) {
@@ -66,7 +66,7 @@ router.delete('/:id', async (req, res) => {
       },
     });
     if (!categoryData) {
-      return res.status(404).json({ message: 'No category found.  Try again.'});
+      return res.status(404).json({ message: 'No category found, please try again.' });
     }
     res.status(200).json(categoryData);
   } catch (error) {
