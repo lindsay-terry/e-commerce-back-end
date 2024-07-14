@@ -51,7 +51,7 @@ router.put('/:id', async (req, res) => {
     tag.tag_name = tag_name;
     await tag.save();
 
-    return res.status(200).json(tag);
+    return res.status(200).json({ message: 'Updated tag successfully.' });
   } catch (error) {
     return res.status(500).json(error);
   }
@@ -68,7 +68,7 @@ router.delete('/:id', async (req, res) => {
     if (!tagData) {
       return res.status(404).json({ message: 'No tag found, please try again.'});
     }
-    res.status(200).json(tagData);
+    res.status(200).json({ message: 'Tag successfully deleted.' });
   } catch (error) {
     res.status(500).json(error);
   }
