@@ -18,7 +18,7 @@ Installation instructions for application:
 npm i
 
 ## Usage
-Click [here]() for a video demonstration of the application.
+Click [here](https://drive.google.com/file/d/1C4vhV8DF3vzU9PyBcoKEO88u4Ab6EYoW/view?usp=sharing) for a video demonstration of the application.
 
 To use this project, ensure Node.js and PostgreSQL are installed and clone repository.  Create a .env file to store credentials and install all dependencies according to the instructions in the installation section.  Using postgreSQL, run the schema file to create the database and the command **npm run seed** to seed the database.  **Node server.js** is the command to start the application.  With the server running, navigate to Insomnia or your preferred API client to interact with the application.  Perform GET/POST/PUT/DELETE requets using any of the following api routes:
 
